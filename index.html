@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar_Sesion</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <form action="" id="miFormulario">
+        <h1>Registrarse</h1>
+        <input type="text"  maxlength = "40"pattern = "[A-Za-z]{3,40}"  id="nombre" required placeholder="NombreUsuario" >
+        <input type="number"  min = "18" max = "100" required id="edad" placeholder="Edad">
+        <input type="text" id="telefono" pattern = [0-9]{8} required placeholder="Teléfono">
+  
+        <p id="mensajeError">
+          <!--En esta caja mostraremos los posibles llamados de atención-->
+        </p>
+
+        <input type="submit" id="enviar" value = "Enviar">
+        <input type="reset" id="borrar" value = "Borrar">
+
+        <script src = "main.js"></script>
+    </form>
+</body>
+</html>

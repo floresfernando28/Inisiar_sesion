@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Corinthia&family=Crete+Round&family=Dongle:wght@700&family=Merriweather:wght@300&family=Patrick+Hand&family=Slabo+13px&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.error{
+    border: solid 2px rgb(37, 120, 175);
+}
+#mensajeError{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 19px;
+    padding: 5px;
+    text-align: center;
+}
+body{
+    display: block;
+    min-height: 100vh;
+    background-image: url(img/fondo_ideal.jpg);
+    background-size: cover;
+}
+
+#miFormulario{
+    margin: auto;
+    width: 50%;
+    max-width: 500px;
+    border-style: none;
+    padding: 10px;
+    margin-top: 120px;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+h1{
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+    font-size: 25px;
+    border-radius: 10px;
+    color: white;
+    font-weight:inherit;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+input[type="text"]{
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+input[type="number"]{
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+input[type="submit"]{
+    display: block;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    margin-left: 25%;
+    color: white;
+    background-color: rgba(0,0,0,0.4); 
+    cursor: pointer;
+
+
+}
+::placeholder{
+    color:ivory;
+}
+input[type="submit"]:hover{
+    background: rgba(18, 59, 66, 0.4);
+}
+input[type="submit"]:active{
+    transform: scale(0.9);
+}
+input[type="reset"]:hover{
+    background: rgba(18, 59, 66, 0.4);
+}
+input[type="reset"]:active{
+    transform: scale(0.9);
+}
+input[type="reset"]{
+    display: block;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+}
+input{
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+}
+form{
+    border-radius: 10px;
+}
+
+@media (max-width: 760px){
+    #miFormulario{
+        width: 75%;
+    }
+    input[type="reset"]{
+        width: 28%;
+    }
+    input[type="submit"]{
+        width: 28%;
+        margin-left: 20%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #mensajeError{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    #miFormulario{
+        width: 90%;
+    }
+    input[type="reset"]{
+        width: 28%;
+    }
+    input[type="submit"]{
+        width: 28%;
+    }
+}
+
+
